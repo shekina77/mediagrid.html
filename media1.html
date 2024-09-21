@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .food-item {
+            width: 250px;
+            
+            border: 2px solid black;
+            background-color: aqua;
+            
+
+        }
+
+        .fooditem,.adress{
+            display: flex;
+            gap: 65px;
+        }
+        .fooditem1,.adress1{
+            display: flex;
+            gap: 78px;
+        }
+        .fooditem2,.adress2{
+            display: flex;
+            gap: 90px;
+        }
+
+    
+        
+
+        @media screen and (max-width:424px) {
+            .food-items {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 10px;
+                
+                justify-content: center;
+            
+            }
+            .food-item1,.fooditem2,.fooditem span{
+                font-size: 1rem;
+
+            }
+            .food-item1,.fooditem2,.food-item > h3{
+                font-size: 1.7rem;
+
+            }
+            .adress1,.adress2,.adress > h4{
+                font-size: 1.2rem;
+
+            }
+
+
+        }
+
+        @media screen and (min-width:425px) and (max-width:768px) {
+            .food-items {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 10px;
+                
+                justify-content: space-around;
+
+            }
+        }
+
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            .food-items {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+        @media screen and (min-width:1025px) and (max-width:1440px){
+            .food-items {
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="food-items">
+        <div class="food-item">
+            <img src="https://content.jdmagicbox.com/comp/hathras/p2/9999p5722.5722.220703220931.w9p2/catalogue/royal-rich-restaurant-aligarh-road-hathras-restaurants-h7zh62t9ab.jpg"
+                width="250px" height="200px">
+
+            <div class="fooditem1">
+                <h3>Royal Restaurant</h3>
+                <span>3.7</span>
+            </div>
+            <div class="adress1">
+                <h4>Algira road,Hatras</h4>
+                <span>5.4km</span>
+            </div>
+        </div>
+
+
+        <div class="food-item">
+            <img src="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?cs=srgb&dl=pexels-reneterp-1581384.jpg&fm=jpg"
+                width="250px" height="200px">
+
+            <div class="fooditem2">
+                <h3>Siddartha Grand</h3>
+                <span>4.2</span>
+            </div>
+            <div class="adress2">
+                <h4>Brodipet,guntur</h4>
+                <span>4.4km</span>
+            </div>
+        </div>
+
+
+        <div class="food-item">
+            <img src="https://b.zmtcdn.com/data/pictures/5/18607685/b6db9a6d50f0880c9e640815daddf832_featured_v2.jpg"
+                width="250px" height="200px">
+
+            <div class="fooditem">
+                <h3>Special Biryani</h3>
+                <span>3.2</span>
+            </div>
+            <div class="adress">
+                <h4>Ameerpet,hyderabad</h4>
+                <span>4.2km</span>
+            </div>
+        </div>
+
+
+        <div class="food-item">
+            <img src="https://b.zmtcdn.com/data/pictures/7/92587/7faa0b1f29f91e7ad81fac0beb905937.jpg?fit=around|960:500&crop=960:500;*,*"
+                width="250px" height="200px">
+
+            <div class="fooditem">
+                <h3>Mekong Restuarent</h3>
+                <span>4.3</span>
+            </div>
+            <div class="adress">
+                <h4>Begampet,hyderabad</h4>
+                <span>6.2km</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+</body>
+</html>
